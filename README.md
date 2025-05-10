@@ -16,8 +16,8 @@
 The task was to design and develop a completely responsive webpage that can reshaped to different screens and devices such as desktops, tablets, and smartphones. The main technologies used to complete the task were HTML, CSS, and JavaScript. The emphasis was on a layout that is visually appealing, but also usable and accessible on all platforms. 
 The process started with planning where to place content on the page. We started with semantic HTML elements like  Doing this made it easier to keep the content organized and made it easier for assistive technology to identify the page structure. During the design process it was really helpful to use sketch to think through the different responsive states and layouts of the project. Once the HTML layout was complete we were able to experiment with the layout using CSS media queries to change the layout, font sizes and spacing in relation to the width of the device screens. For example, we changed from a navigation menu to hamburger menus in some small viewports and adjusted the grid layouts to stack vertically when viewed on mobile screens.
 We added JavaScript to make the changes to the navigations menu, and many additional features that changed the content dynamically and provided feedback on user actions. All of the colors, fonts, and user controls were considered providing color contrast, readability, and touch friendly sites to all users. The final deliverable is a webpage with outstanding responsive features
-## OUTPUT: <img width="936" alt="Image" src="https://github.com/user-attachments/assets/fe3f32c4-7e53-4524-a16c-d7be4122390e" />
-![Image](https://github.com/user-attachments/assets/29289709-e5cd-4a10-8a14-551cc08a6ee5) 
+## OUTPUT: ![Image](https://github.com/user-attachments/assets/29289709-e5cd-4a10-8a14-551cc08a6ee5) 
+<img width="936" alt="Image" src="https://github.com/user-attachments/assets/fe3f32c4-7e53-4524-a16c-d7be4122390e" />
 
 ## Task 2: SPA Landing Page Redesign
 Task 2: Redesign a Website Landing Page as a Single Page Application 
