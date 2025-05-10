@@ -24,10 +24,12 @@ Task 2: Redesign a Website Landing Page as a Single Page Application
 The second task was to take an existing website landing page and re-design it as a Single Page Application (SPA), improving usability and user experience, and modernizing its overall appearance. The project had the goal of updating the feel of the landing page, making it visually appealing, and easier to use. As with any redesign, the design team needed to go through the design process, starting with assessing the current website, listing what worked and what did not, and making notes of concerns, such as old design styles, difficult navigation, not responsive, and overall usability concerns. 
 The team built a new SPA using semantic HTML5, modern CSS (Flexbox and Grid), and JavaScript for dynamic content management without a full page reload. The team created a sticky navigation bar at the top of the page with clear visual elements that allowed users to navigate the site at any time. The landing page was updated with modern color palettes and typography, improving visual appeal and overall readability. 
 While usual enhancements such as smooth scrolling, animated transitions, and interactive design components were made to promote an enhanced user experience, the SPA also allowed for faster navigation and an application-style feel that modern users have come to expect from websites. Screenshots of the before and after are included to show a visual cue of the improvements, and a 
-## OUTPUT : ![Image](https://github.com/user-attachments/assets/03a5918d-3dd7-4207-80a5-eda69b8e32d1)
+## OUTPUT :LAPTOP VIEW
+![Image](https://github.com/user-attachments/assets/03a5918d-3dd7-4207-80a5-eda69b8e32d1)
 ![Image](https://github.com/user-attachments/assets/5fca3274-74ec-4233-abb1-cf492cd1db27)
 ![Image](https://github.com/user-attachments/assets/3e16b270-6acf-4d97-8515-4a66bda15ffa)
 
+## PHONE VIEW
 ![Image](https://github.com/user-attachments/assets/2adc2b31-0650-40f2-849c-97acec79a309)
 ![Image](https://github.com/user-attachments/assets/0dc8fc29-3fde-4960-8ef4-6b83f293bb30)
 
