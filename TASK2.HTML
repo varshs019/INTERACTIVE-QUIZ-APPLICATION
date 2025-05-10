@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f7f7;
+    }
+    header {
+      background: #4a91e204;
+      color: rgb(156, 127, 241);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #f6d605;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: rgb(109, 8, 250);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background: #0bef1b;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card {
+      background: #6ccbebb2;
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 250px;
+      min-width: 220px;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 4px rgba(23, 165, 247, 0.05);
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    /* Responsive Design */
+    @media (max-width: 700px) {
+      nav a { padding: 0.7rem 0.7rem; font-size: 0.95rem; }
+      main { padding: 1rem; }
+      .grid { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Webpage Demo</h1>
+    <p>Resize the window or view on your phone/tablet to see the layout adapt!</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>This page demonstrates seamless responsiveness using HTML, CSS, and JavaScript. The layout, navigation, and cards adapt to any device size.</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Flexible Grid</h3>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Nature">
+          <p>Cards rearrange themselves for mobile, tablet, and desktop screens.</p>
+        </div>
+        <div class="card">
+          <h3>Sticky Navigation</h3>
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Mountains">
+          <p>Navigation stays accessible and adapts to smaller screens.</p>
+        </div>
+        <div class="card">
+          <h3>Dynamic Message</h3>
+          <div id="js-message" style="margin:1rem 0; font-weight:bold;"></div>
+          <p>This message updates based on your screen width (using JavaScript).</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <div>
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer style="background:#58d49e;color:rgb(28, 28, 28);text-align:center;padding:1rem;">
+    &copy; 2024 Responsive Demo. All rights reserved.
+  </footer>
+  <script>
+    // JavaScript for dynamic responsiveness message
+    function updateMessage() {
+      const msg = document.getElementById('js-message');
+      if(window.innerWidth < 500) {
+        msg.textContent = 'You are viewing on a small/mobile screen!';
+      } else if(window.innerWidth < 900) {
+        msg.textContent = 'You are viewing on a tablet or medium screen!';
+      } else {
+        msg.textContent = 'You are viewing on a large/desktop screen!';
+      }
+    }
+    window.addEventListener('resize', updateMessage);
+    window.addEventListener('DOMContentLoaded', updateMessage);
+  </script>
+</body>
+</html>
